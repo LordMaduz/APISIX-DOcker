@@ -1,0 +1,7 @@
+docker run -d --name apache-apisix \
+  -p 9080:9080 \
+  -e APISIX_STAND_ALONE=true \
+  apache/apisix:latest
+
+
+docker build  -t apache/apisix:latest .
